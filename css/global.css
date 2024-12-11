@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    font-style: normal;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    text-decoration: 0;
+    border: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    scrollbar-width: none;
+    transition: all .2s ease-in;
+}
+
+body{
+    background-color: var(--background);
+}
+
+.page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:root{
+    --base-font: #E8EBF7;
+    --sec-base-font: #0E0F19;
+    --background: #0E0F19;
+    --nav-inact: #4B5267;
+    --grey: #888;
+    --ghostwhite: #E8EBF7;
+    --richblack: #0E0F19;
+    --charcoal: #4B5267;
+    --blue: #00BFFF;
+    /* 06D6A0 00BFFF */
+}
+
+.light-mode{
+    --base-font: #0E0F19;
+    --sec-base-font: #E8EBF7;
+    --background: #E8EBF7;
+    --nav-inact: #888;
+}
+
+html, body, .page{
+    block-size: 100%;
+}
+  
+html{
+    scroll-snap-type: y mandatory;
+}
+
+.page {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.page.is-visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#home {
+    animation-delay: 0s;
+}
+
+#aboutme {
+    animation-delay: 0.5s;
+}
+
+#portfolio {
+    animation-delay: 1s;
+}
+
+#contact {
+    animation-delay: 1.5s;
+}

@@ -1,0 +1,54 @@
+*{
+    color: var(--nav-inact);
+    transition: all .5s ease;
+}
+header{
+    padding: 2.5rem 5rem;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-transform: uppercase;
+    z-index: 10;
+}
+.left-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-profile p{
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    color: var(--blue);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar a{
+    margin: 0 2rem;
+    font-size: 1rem;   
+    cursor: pointer;
+}
+.navbar a.active,
+.navbar a:hover{
+    color: var(--base-font);
+}
+.mode{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--base-font);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.mode img{
+    width: 1.5rem;
+}
+.mode:hover{
+    filter: brightness(70%);
+}
