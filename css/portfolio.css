@@ -33,6 +33,7 @@
     height: 18rem;
     border-radius: .5rem;
     box-shadow: 0 0 10px 1px black;
+    object-fit: cover;
 }
 
 .porto-title{
