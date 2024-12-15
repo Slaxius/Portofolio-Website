@@ -182,15 +182,15 @@
                     </div>
                     <div class="contact-your-phone">
                         <i class="fa-solid fa-phone"></i>
-                        <input type="tel" id="phone" placeholder="Your Name" required>
+                        <input type="tel" id="phone" placeholder="Your Phone Number" required>
                     </div>
                     <div class="contact-email">
                         <i class="fa-solid fa-envelope"></i>
                         <input type="email" id="email" placeholder="Your Email" required>
                     </div>
-                    <div class="contact-email-title">
+                    <div class="contact-email-subject">
                         <i class="fa-solid fa-bell"></i>
-                        <input type="title" id="title"  placeholder="Email Subject" required>
+                        <input type="text" id="subject"  placeholder="Email Subject" required>
                     </div>
                 </div>
                 <div class="right-contact-bot-container">
@@ -201,7 +201,13 @@
                 </div>
             </div>
             <div class="bot-contact-bot-container">
-                <button type="submit" onclick="sendEmail()">Submit</button>
+                <button type="submit" onclick="validateForm()">Submit</button>
+            </div>
+        </div>
+        <div class="popup-content">
+            <div id="popup-message">
+                <p>This is popup</p>
+                <button id="close-popup">Close</button>
             </div>
         </div>
     </div>

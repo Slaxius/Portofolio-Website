@@ -1,20 +1,24 @@
 function sendEmail() {
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const title = document.getElementById('title').value;
-    const message = document.getElementById('message').value;
+    const name = $('#name').val();
+    const email = $('#email').val();
+    const phone = $('#phone').val();
+    const subject = $('#subject').val();
+    const message = $('#message').val();
 
     const parameter = {
         from_name: name,
         from_email: email,
-        subject: title,
+        phone_number: phone,
+        email_subject: subject,
         message: message,
     };
 
+    console.log(parameter);
+
     emailjs.send('service_ic0pivi', 'template_9m1anj7', parameter)
-    .then(function(response) {
-        alert("Mail sent successfully!");
-    }, function(error) {
-        alert("Failed to send mail: " + error);
-    });
+    // .then(function(response) { // Ga perlu, karena udah ada popup di contactValidation.js
+    //     alert("Mail sent successfully!");
+    // }, function(error) {
+    //     alert("Failed to send mail: " + error);
+    // });
 }

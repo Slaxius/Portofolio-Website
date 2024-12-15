@@ -83,3 +83,43 @@
 .bot-contact-bot-container button:hover{
     box-shadow: 0px 0px 10px 1px var(--grey);
 }
+
+/* Pop up in contactValidation.js */
+.popup-content{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+}
+#popup-message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background: var(--background);
+    border-radius: 1rem;
+    box-shadow: 0 0 20px var(--blue);
+    height: auto;
+    width: auto;
+    padding: 4rem 6rem;
+    gap: 3rem;
+    
+    p{
+        font-size: 2rem;
+        color: var(--base-font);
+    }
+}
+#close-popup{
+    width: 5rem;
+    height: 2rem;
+    font-size: 1rem;
+    color: var(--sec-base-font);
+    background-color: var(--blue);
+    border-radius: 1rem;
+}
