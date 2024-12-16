@@ -19,59 +19,59 @@
     font-size: 1.5rem;
     color: var(--base-font);
 }
-.contact-bot-container{
+#contact-form-container{
     width: 100%;
-    padding: 5rem 5rem 0 5rem;
+    padding: 5rem 10rem 0 10rem;
 }
-.top-contact-bot-container{
+.top-form-container{
     display: flex;
     justify-content: space-between;
 }
-.top-contact-bot-container i{
+.top-form-container i{
     position: absolute;
     top: auto;
     left: auto;
     color: var(--base-font);
     padding: 1.2rem 0 0 1rem;
     font-size: 1.5rem;
+    height: auto;
 }
-.left-contact-bot-container{
+.left-form-container{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     width: 35%;
-    gap: 2rem;
+    gap: 3rem;
 }
-.right-contact-bot-container{
+.right-form-container{
     width: 60%;
 }
-.left-contact-bot-container input{
+.left-form-container input,
+.right-form-container textarea{
     border: 1px solid var(--base-font);
+    width: 100%;
+    padding: 1rem 1rem 1rem 4rem;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+    background: transparent;
+    color: var(--base-font);
+}
+.left-form-container input{
     height: 4rem;
-    width: 100%;
-    padding: 1rem 1rem 1rem 4rem;
-    font-size: 1.3rem;
-    border-radius: 1rem;
-    background: transparent;
-    color: var(--base-font);
 }
-.right-contact-bot-container textarea{
-    border: 1px solid var(--base-font);
-    height: 22rem;
-    width: 100%;
-    padding: 1rem 1rem 1rem 4rem;
-    font-size: 1.3rem;
-    border-radius: 1rem;
-    background: transparent;
-    color: var(--base-font);
+.right-form-container textarea{
+    height: 100%;
 }
-.bot-contact-bot-container{
-    height: 20%;
+.right-form-container .message{
+    height: 28.5rem;
+}
+.bot-form-container{
+    margin-top: 2rem;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
 }
-.bot-contact-bot-container button{
+.bot-form-container button{
     font-size: 1.5rem;
     color: var(--sec-base-font);
     background-color: var(--blue);
@@ -80,7 +80,7 @@
     cursor: pointer;
     border-radius: 2rem;
 }
-.bot-contact-bot-container button:hover{
+.bot-form-container button:hover{
     box-shadow: 0px 0px 10px 1px var(--grey);
 }
 
@@ -122,4 +122,15 @@
     color: var(--sec-base-font);
     background-color: var(--blue);
     border-radius: 1rem;
+    cursor: pointer;
+}
+
+/* Error Message */
+.error{
+    color: red;
+    font-size: 1rem;
+}
+input.error-input,
+textarea.error-input{
+    border-color: red;
 }

@@ -173,37 +173,43 @@
             <h1>Let's make something awesome together</h1>
             <p>I'm always open to discussing new projects or creative ideas. Let's create something awesome together!</p>
         </div>
-        <div class="contact-bot-container">
-            <div class="top-contact-bot-container">
-                <div class="left-contact-bot-container">
+        <form id="contact-form-container">
+            <div class="top-form-container">
+                <div class="left-form-container">
                     <div class="contact-your-name">
                         <i class="fa-solid fa-user"></i>
-                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="text" id="name" placeholder="Your Name">
+                        <span class="error" id="nameError"></span>
                     </div>
                     <div class="contact-your-phone">
                         <i class="fa-solid fa-phone"></i>
-                        <input type="tel" id="phone" placeholder="Your Phone Number" required>
+                        <input type="tel" id="phone" placeholder="Your Phone Number">
+                        <span class="error" id="phoneError"></span>
                     </div>
                     <div class="contact-email">
                         <i class="fa-solid fa-envelope"></i>
-                        <input type="email" id="email" placeholder="Your Email" required>
+                        <input type="email" id="email" placeholder="Your Email">
+                        <span class="error" id="emailError"></span>
                     </div>
                     <div class="contact-email-subject">
                         <i class="fa-solid fa-bell"></i>
-                        <input type="text" id="subject"  placeholder="Email Subject" required>
+                        <input type="text" id="subject"  placeholder="Email Subject">
+                        <span class="error" id="subjectError"></span>
                     </div>
                 </div>
-                <div class="right-contact-bot-container">
+                <div class="right-form-container">
                     <div class="message">
                         <i class="fa-solid fa-comment"></i>
-                        <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                        <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                        <span class="error" id="messageError"></span>
                     </div>
                 </div>
             </div>
-            <div class="bot-contact-bot-container">
-                <button type="submit" onclick="validateForm()">Submit</button>
+            <div class="bot-form-container">
+                <button type="submit">Submit</button>
             </div>
-        </div>
+        </form>
+
         <div class="popup-content">
             <div id="popup-message">
                 <p>This is popup</p>
