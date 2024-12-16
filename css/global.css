@@ -36,7 +36,6 @@ body{
     --richblack: #0E0F19;
     --charcoal: #4B5267;
     --blue: #00BFFF;
-    /* 06D6A0 00BFFF */
 }
 
 .light-mode{
@@ -49,17 +48,13 @@ body{
 html, body, .page{
     block-size: 100%;
 }
-  
-html{
-    scroll-snap-type: y mandatory;
-}
 
-.page {
+.page{
     opacity: 0;
     transform: scale(0.8);
 }
 
-.page.is-visible {
+.page.is-visible{ /* untuk scroll animation */
     opacity: 1;
     transform: scale(1);
 }
@@ -67,15 +62,12 @@ html{
 #home {
     animation-delay: 0s;
 }
-
 #aboutme {
     animation-delay: 0.5s;
 }
-
 #portfolio {
     animation-delay: 1s;
 }
-
 #contact {
     animation-delay: 1.5s;
 }

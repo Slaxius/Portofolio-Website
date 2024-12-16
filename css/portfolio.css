@@ -1,11 +1,10 @@
-.portfolio {
+.portfolio{
     display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     gap: 0 3rem;
 }
-
-.pbox {
+.pbox{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +15,6 @@
     border-radius: 1rem;
     box-shadow: 0 0 10px 1px var(--grey);
 }
-
 .porto-img{
     display: flex;
     align-items: center;
@@ -24,7 +22,6 @@
     width: 100%;
     height: 20rem;
 }
-
 .porto-img img{
     display: flex;
     align-items: center;
@@ -35,13 +32,11 @@
     box-shadow: 0 0 10px 1px black;
     object-fit: cover;
 }
-
 .porto-title{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .porto-desc{
     height: 12rem;
     display: flex;
@@ -50,17 +45,14 @@
     text-align: center;
     padding: 0 2rem;
 }
-
 .porto-desc p{
     font-size: 1.3rem;
 }
-
 .porto-button {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .porto-button a{
     display: flex;
     align-items: center;
@@ -73,17 +65,14 @@
     font-weight: 600;
     cursor: pointer;
 }
-
 .porto-desc p,
 .porto-title h1,
 .porto-button a{
     color: var(--richblack);
 }
-
 .pbox:hover{
     box-shadow: 0 0 15px 5px var(--grey);
 }
-
 .porto-button a:hover{
     box-shadow: 0px 0px 10px 1px var(--grey);
 }

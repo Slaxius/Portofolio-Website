@@ -21,18 +21,12 @@
 
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/home.css">
-    <link rel="stylesheet" href="/css/aboutme.css">
-    <link rel="stylesheet" href="/css/portfolio.css">
-    <link rel="stylesheet" href="/css/contact.css">
     <link rel="stylesheet" href="/css/footer.css">
 
     <script src="/js/activeNavbar.js" defer></script>
-    <script src="/js/changeText.js" defer></script>
-    <script src="/js/contactValidation.js" defer></script>
-    <script src="/js/email.js" defer></script>
     <script src="/js/switchMode.js" defer></script>
     <script src="/js/scrollAnimation.js" defer></script>
+    <script src="/js/pageSection.js" defer></script>
 </head>
 <body>
     <header>
@@ -50,173 +44,13 @@
         </div>
     </header>
 
-    <div class="home page" id="home">
-        <div class="home-left-container">
-            <h4>Hi everyone, I'm</h4>
-            <h1>Silverius Calvin</h1>
-            <h2>dedicated to be <span class="highlight"></span></h2>
+    <div class="homeSection page"></div>
 
-            <div class="getme">
-                <a href="#contact">Contact Me</a>
-                <a href="/asset/CV_Silverius Calvin.pdf" download="CV_Silverius Calvin">My Resume</a>
-            </div>
+    <div class="aboutmeSection page"></div>
 
-            <div class="social-media">
-                <a href="https://www.instagram.com/silveriuscalvin?igsh=MXhsbGY3b3RxaW0waQ==" target="_blank" class="fa-brands fa-instagram"></a>
-                <a href="https://www.linkedin.com/in/silverius-calvin-1a56b8294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="fa-brands fa-linkedin-in"></a>
-                <a href="https://github.com/Slaxius" target="_blank" class="fa-brands fa-github"></a>
-            </div>
-        </div>
-        <div class="home-right-container">
-            <div class="background-shape"></div>
-            <img class="img" src="/asset/myself-rmvbg.png" alt="">
-        </div>
-    </div>
-
-    <div class="aboutme page" id="aboutme">
-        <h1 class="about-title">About me</h1>
-        <p class="about">Hi, I'm Silverius Calvin, a tech enthusiast and Computer Science student with a focus on Network Technology. Let's connect and transform ambitious ideas into meaningful solutions. Whether it's through collaboration or conversation, I'm excited to share the journey!
-        </p>
-        <div class="my-skill">
-            <div class="soft-skill">
-                <h1>Soft Skills</h1>
-                <div class="soft-skill-cont">
-                    <p>Emotional Intelligence</p>
-                    <p>Critical Thinking</p>
-                    <p>Problem-solving</p>
-                    <p>Time Management</p>
-                    <p>Event Planning</p>
-                    <p>Communication</p>
-                    <p>Adaptability</p>
-                    <p>Creativity</p> 
-                    <p>Leadership</p>
-                    <p>Teamwork</p>
-                    <p>Empathy</p>
-                </div>
-            </div>
-            <div class="hard-skill">
-                <h1>Hard Skills</h1>
-                <div class="hard-skill-cont">
-                    <i class="fa-brands fa-html5"><span>HTML</span></i>
-                    <i class="fa-brands fa-css3-alt"><span>CSS</span></i>
-                    <i class="fa-brands fa-js"><span>JavaScript</span></i>
-                    <img src="/asset/icons8-c-programming.svg" alt=""><span>C Programming</span>
-                    <i class="fa-brands fa-java"><span>Java</span></i>
-                    <i class="fa-solid fa-database"><span>SQL Server</span></i>
-                    <i class="fa-brands fa-figma"><span>Figma</span></i>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio page" id="portfolio">
-        <div class="porto1 pbox">
-            <div class="porto-img">
-                <img src="/asset/Asphatl9-Rejends-Thumbnail.png" alt="">
-            </div>
-            <div class="porto-title">
-                <h1>Asphatl9: ReJends</h1>
-            </div>
-            <div class="porto-desc">
-                <p>A redesigned replica of the official Asphalt9 website, featuring game information, event updates, a media gallery, and download links for various platforms.</p>
-            </div>
-            <div class="porto-button">
-                <a href="https://github.com/Slaxius/Asphatl9" target="_blank">View on Github</a>
-            </div>
-        </div>
-        <div class="porto2 pbox">
-            <div class="porto-img">
-                <img src="/asset/NO PROJECT.png" alt="">
-            </div>
-            <div class="porto-title">
-                <h1>Lorem, ipsum.</h1>
-            </div>
-            <div class="porto-desc">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel qui amet odio quae reiciendis. Sapiente inventore, veritatis eaque quis quasi qui vel? Iste impedit ipsum nesciunt magni obcaecati eius aliquam?</p>
-            </div>
-            <div class="porto-button">
-                <a href="" target="_blank">Click</a>
-            </div>
-        </div>
-        <div class="porto3 pbox">
-            <div class="porto-img">
-                <img src="/asset/NO PROJECT.png" alt="">
-            </div>
-            <div class="porto-title">
-                <h1>Lorem, ipsum.</h1>
-            </div>
-            <div class="porto-desc">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel qui amet odio quae reiciendis. Sapiente inventore, veritatis eaque quis quasi qui vel? Iste impedit ipsum nesciunt magni obcaecati eius aliquam?</p>
-            </div>
-            <div class="porto-button">
-                <a href="" target="_blank">Click</a>
-            </div>
-        </div>
-        <div class="porto4 pbox">
-            <div class="porto-img">
-                <img src="/asset/NO PROJECT.png" alt="">
-            </div>
-            <div class="porto-title">
-                <h1>Lorem, ipsum.</h1>
-            </div>
-            <div class="porto-desc">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel qui amet odio quae reiciendis. Sapiente inventore, veritatis eaque quis quasi qui vel? Iste impedit ipsum nesciunt magni obcaecati eius aliquam?</p>
-            </div>
-            <div class="porto-button">
-                <a href="" target="_blank">Click</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="contact page" id="contact">
-        <div class="contact-top-container">
-            <h1>Let's make something awesome together</h1>
-            <p>I'm always open to discussing new projects or creative ideas. Let's create something awesome together!</p>
-        </div>
-        <form id="contact-form-container">
-            <div class="top-form-container">
-                <div class="left-form-container">
-                    <div class="contact-your-name">
-                        <i class="fa-solid fa-user"></i>
-                        <input type="text" id="name" placeholder="Your Name">
-                        <span class="error" id="nameError"></span>
-                    </div>
-                    <div class="contact-your-phone">
-                        <i class="fa-solid fa-phone"></i>
-                        <input type="tel" id="phone" placeholder="Your Phone Number">
-                        <span class="error" id="phoneError"></span>
-                    </div>
-                    <div class="contact-email">
-                        <i class="fa-solid fa-envelope"></i>
-                        <input type="email" id="email" placeholder="Your Email">
-                        <span class="error" id="emailError"></span>
-                    </div>
-                    <div class="contact-email-subject">
-                        <i class="fa-solid fa-bell"></i>
-                        <input type="text" id="subject"  placeholder="Email Subject">
-                        <span class="error" id="subjectError"></span>
-                    </div>
-                </div>
-                <div class="right-form-container">
-                    <div class="message">
-                        <i class="fa-solid fa-comment"></i>
-                        <textarea name="message" id="message" placeholder="Your Message"></textarea>
-                        <span class="error" id="messageError"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="bot-form-container">
-                <button type="submit">Submit</button>
-            </div>
-        </form>
-
-        <div class="popup-content">
-            <div id="popup-message">
-                <p>This is popup</p>
-                <button id="close-popup">Close</button>
-            </div>
-        </div>
-    </div>
+    <div class="portofolioSection page"></div>
+    
+    <div class="contactSection page"></div>
 
     <footer>
         <div class="social-media-footer">

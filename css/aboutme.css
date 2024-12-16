@@ -5,12 +5,10 @@
     flex-direction: column;
     gap: 7rem;
 }
-
 h1.about-title{
     color: var(--base-font);
     font-size: 3rem;
 }
-
 p.about{
     font-size: 1.5rem;
     color: var(--base-font);
@@ -18,7 +16,6 @@ p.about{
     text-align: center;
     width: 65%;
 }
-
 .my-skill{
     display: flex;
     align-items: flex-start;
@@ -26,7 +23,6 @@ p.about{
     width: 60%;
     gap: 2rem;
 }
-
 .soft-skill,
 .hard-skill{
     width: 45%;
@@ -37,12 +33,10 @@ p.about{
     flex-direction: column;
     gap: 1rem;
 }
-
 .soft-skill h1,
 .hard-skill h1{
     color: var(--base-font);
 }
-
 .soft-skill-cont p{
     color: var(--base-font);
     filter: brightness(80%);
@@ -52,13 +46,11 @@ p.about{
     margin: 0 1rem 1rem 0;
     font-size: 1.1rem;
 }
-
 .hard-skill-cont i{
     color: var(--base-font);
     font-size: 2rem;
     margin: 0 2rem 1.5rem 0;
 }
-
 .hard-skill-cont span{
     font-weight: 400;
     color: var(--base-font);
@@ -66,7 +58,6 @@ p.about{
     font-size: 1rem;
     margin-left: .5rem;
 }
-
 .hard-skill-cont img{
     width: 2.2rem;
     margin-bottom: -5px;

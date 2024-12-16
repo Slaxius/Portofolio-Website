@@ -1,9 +1,10 @@
 .home{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 0 20rem;
+    justify-content: center;
+}
+.home-left-container{
+    width: 35%;
 }
 .home h4{
     font-size: 2rem;

@@ -13,7 +13,7 @@ function sendEmail() {
         message: message,
     };
 
-    console.log(parameter);
+    // console.log(parameter); // test parameter
 
     emailjs.send('service_ic0pivi', 'template_9m1anj7', parameter)
     // .then(function(response) { // Ga perlu, karena udah ada popup di contactValidation.js
