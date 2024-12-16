@@ -52,13 +52,13 @@ $(document).ready(function(){
             $('#phone').addClass('error-input');
             isValid = false;
         }
-        else if(phone.length < 7 || phone.length > 15){
-            $('#phoneError').text('Phone number must be between 7 and 15 digits.');
+        else if(!phoneRegex.test(phone)){
+            $('#phoneError').text('Phone number can only contain numbers, +, -, (), or space.');
             $('#phone').addClass('error-input');
             isValid = false;
         }
-        else if(!phoneRegex.test(phone)){
-            $('#phoneError').text('Phone number can only contain numbers, +, -, (), or space.');
+        else if(phone.length < 7 || phone.length > 15){
+            $('#phoneError').text('Phone number must be between 7 and 15 digits.');
             $('#phone').addClass('error-input');
             isValid = false;
         }
