@@ -22,8 +22,11 @@
 .highlight{
     color: var(--base-font);
 }
+.social-media{
+    display: flex;
+    gap: 4rem;
+}
 .social-media a{
-    margin-right: 4rem;
     font-size: 2rem;
     padding: 1rem;
     border-radius: 50%;
@@ -42,7 +45,7 @@
 }
 .background-shape{
     background-color: var(--blue);
-    width: 23rem;
+    width: 25rem;
     height: 25rem;
     position: absolute;
     z-index: -1;
@@ -62,6 +65,7 @@
     align-items: center;
     justify-content: flex-start;
     cursor: pointer;
+    gap: 2rem;
 }
 .getme a{
     background-color: var(--blue);
@@ -74,8 +78,38 @@
     font-size: 1.2rem;
     color: var(--sec-base-font);
     font-weight: 600;
-    margin-right: 2rem;
 }
 .getme a:hover{
     box-shadow: 0 0 30px var(--blue);
+}
+
+@media screen and (max-width: 1024px) {
+    .home h4{
+        font-size: 1.5rem;
+    }
+    .home h1{
+        font-size: 3rem;
+    }
+    .home h2{
+        font-size: 2rem;
+    }
+    .getme{
+        margin: 3rem 0;
+    }
+    .getme a{
+        font-size: 1rem;
+    }
+    .social-media{
+        gap: 2rem;
+    }
+    .social-media a{
+        font-size: 1.5rem;
+    }
+    .home-right-container img{
+        width: 30rem;
+    }
+    .background-shape{
+        width: 20rem;
+        height: 20rem;
+    }
 }

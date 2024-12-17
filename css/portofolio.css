@@ -2,7 +2,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0 3rem;
+}
+.porto-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    gap: 3rem;
+    flex-wrap: wrap;
 }
 .pbox{
     display: flex;
@@ -75,4 +83,32 @@
 }
 .porto-button a:hover{
     box-shadow: 0px 0px 10px 1px var(--grey);
+}
+
+@media screen and (max-width: 1024px) {
+    .pbox{
+        width: 20rem;
+        height: 30rem;
+    }
+    .porto-img{
+        height: 15rem;
+    }
+    .porto-img img{
+        width: 16rem;
+        height: 13rem;
+    }
+    .porto-title h1{
+        font-size: 1.5rem;
+    }
+    .porto-desc{
+        height: 8rem;
+    }
+    .porto-desc p{
+        font-size: 1rem;
+    }
+    .porto-button a{
+        height: 2.5rem;
+        width: 12rem;
+        font-size: 1rem;
+    }
 }

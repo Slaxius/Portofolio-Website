@@ -1,4 +1,4 @@
-*{
+.navbar a{
     color: var(--nav-inact);
     transition: all .5s ease;
 }
@@ -51,4 +51,10 @@ header{
 }
 .mode:hover{
     filter: brightness(70%);
+}
+
+@media screen and (max-width: 1024px) {
+    header{
+        padding: 2.5rem;
+    }
 }
