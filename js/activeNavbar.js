@@ -35,11 +35,19 @@ $(document).ready(function(){
         if(navbar.hasClass('active')){
             barsIcon.hide();
             closeIcon.show();
-            
         }
         else{
             barsIcon.show();
             closeIcon.hide();
+        }
+    });
+
+    const navLinks = $('.navbar a');
+    navLinks.click(function(){
+        if(navbar.hasClass('active')){
+            navbar.removeClass('active');
+            burger.find('.fa-bars').show();
+            burger.find('.fa-xmark').hide();
         }
     });
 });
