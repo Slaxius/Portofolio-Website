@@ -21,3 +21,25 @@ $(window).scroll(function(){
         }
     });
 });
+
+$(document).ready(function(){
+    const burger = $('.burger-navbar');
+    const navbar = $('.navbar');
+
+    burger.click(function(){
+        navbar.toggleClass('active');
+        
+        const barsIcon = burger.find('.fa-bars');
+        const closeIcon = burger.find('.fa-xmark');
+        
+        if(navbar.hasClass('active')){
+            barsIcon.hide();
+            closeIcon.show();
+            
+        }
+        else{
+            barsIcon.show();
+            closeIcon.hide();
+        }
+    });
+});
