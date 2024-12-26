@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 .contact-top-container h1{
     font-size: 4rem;
@@ -57,7 +58,7 @@
 .right-form-container textarea{
     border: 1px solid var(--base-font);
     width: 100%;
-    padding: 1rem 1rem 1rem 4rem;
+    padding: 1rem 1rem 1rem 3.5rem;
     font-size: 1.3rem;
     border-radius: 1rem;
     background: transparent;
@@ -114,21 +115,22 @@
     box-shadow: 0 0 20px var(--blue);
     height: auto;
     width: auto;
-    padding: 4rem 6rem;
+    padding: 4rem;
     gap: 3rem;
     
     p{
         font-size: 2rem;
         color: var(--base-font);
+        text-align: center;
     }
 }
 #close-popup{
-    width: 5rem;
-    height: 2rem;
-    font-size: 1rem;
+    width: 10rem;
+    height: 3.5rem;
+    font-size: 1.5rem;
     color: var(--sec-base-font);
     background-color: var(--blue);
-    border-radius: 1rem;
+    border-radius: 2rem;
     cursor: pointer;
 }
 
@@ -166,5 +168,73 @@ textarea.error-input{
     }
     .error{
         font-size: .8rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .contact-top-container{
+        margin: 0 2rem;
+    }
+    .contact-top-container h1{
+        font-size: 2rem;
+    }
+    .contact-top-container p{
+        font-size: 1rem;
+    }
+    #contact-form-container{
+        padding: 3rem 3rem 0 3rem;
+    }
+    .top-form-container{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .top-form-container i{
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    .left-form-container{
+        width: 100%;
+        gap: 1rem;
+    }
+    .right-form-container{
+        width: 100%;
+    }
+    .left-form-container input::placeholder,
+    .right-form-container textarea::placeholder{
+        font-size: 1rem;
+    }
+    .left-form-container input,
+    .right-form-container textarea{
+        padding: 1rem auto;
+        font-size: 1rem;
+    }
+    .left-form-container input{
+        height: 3rem;
+    }
+    .right-form-container .message{
+        height: 15rem;
+    }
+    .bot-form-container button{
+        font-size: 1rem;
+        height: 2.5rem;
+        width: 7rem;
+    }
+    #popup-message{
+        width: 75%;
+        padding: 2rem;
+        gap: 2rem;
+
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    #close-popup{
+        font-size: 1rem;
+        height: 2.5rem;
+        width: 7rem;
+    }
+    .error{
+        font-size: .7rem;
     }
 }

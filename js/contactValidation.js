@@ -68,7 +68,7 @@ $(document).ready(function(){
         }
 
         const email = $('#email').val();
-        let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if(!email.length){
             $('#emailError').text('Email must be filled.');
             $('#email').addClass('error-input');

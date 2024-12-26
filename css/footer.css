@@ -5,17 +5,36 @@ footer{
     flex-direction: column;
     background-color: var(--blue);
     padding: 2rem 0;
+    gap: 2rem;
+}
+.social-media-footer{
+    display: flex;
+    gap: 4rem;
 }
 .social-media-footer a{
     font-size: 2.4rem;
-    margin: 0 2rem;
     color: var(--sec-base-font);
 }
 .social-media-footer a:hover{
     transform: scale(1.1);
 }
-.copyright-footer{
+p.copyright-footer{
     font-size: 1.4rem;
-    margin-top: 2rem;
     color: var(--sec-base-font);
+}
+
+@media screen and (max-width: 480px) {
+    footer{
+        padding: 1.5rem 0;
+        gap: 1rem;
+    }
+    .social-media-footer{
+        gap: 3rem;
+    }
+    .social-media-footer a{
+        font-size: 1.5rem;
+    }
+    p.copyright-footer{
+        font-size: 1rem;
+    }
 }

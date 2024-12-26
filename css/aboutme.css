@@ -37,9 +37,10 @@ p.about{
 .hard-skill h1{
     color: var(--base-font);
 }
+.hard-skill-cont,
 .soft-skill-cont{
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
 }
 .soft-skill-cont p{
@@ -52,23 +53,30 @@ p.about{
 .hard-skill-cont i{
     color: var(--base-font);
     font-size: 2rem;
-    margin: 0 2rem 1.5rem 0;
 }
 .hard-skill-cont span{
     font-weight: 400;
     color: var(--base-font);
     filter: brightness(70%);
     font-size: 1rem;
-    margin: 0 .5rem;
-}
-.hard-skill-cont img.C-prog{
-    width: 2.2rem;
-    margin-bottom: -5px;
+    margin-left: .5rem;
 }
 
 @media screen and (max-width: 1024px){
     p.about,
     .my-skill{
         width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .aboutme{
+        gap: 5rem;
+    }
+    h1.about-title{
+        font-size: 2.5rem;
+    }
+    p.about{
+        font-size: 1.2rem;
     }
 }
