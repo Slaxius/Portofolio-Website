@@ -1,118 +1,127 @@
-.portfolio{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 5rem;
+.portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 5rem;
 }
-h1.porto-title{
-    color: var(--base-font);
-    font-size: 3rem;
-    margin-bottom: 3rem;
+h1.porto-title {
+  color: var(--base-font);
+  font-size: 3rem;
+  margin-bottom: 3rem;
 }
-.porto-container{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    height: 40rem;
-    gap: 2rem;
-    padding: 1.5rem;
-    overflow-x: auto;
+.porto-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40rem;
+  gap: 2rem;
+  padding: 1.5rem;
+  overflow-x: auto;
 }
-.porto-container::-webkit-scrollbar{
-    height: 8px;
+.porto-container::-webkit-scrollbar {
+  height: 8px;
 }
-.porto-container::-webkit-scrollbar-track{
-    background: var(--grey);
-    border-radius: 5px;
+.porto-container::-webkit-scrollbar-track {
+  background: var(--grey);
+  border-radius: 5px;
 }
-.porto-container::-webkit-scrollbar-thumb{
-    background: var(--blue);
-    border-radius: 5px;
+.porto-container::-webkit-scrollbar-thumb {
+  background: var(--blue);
+  border-radius: 5px;
 }
-.pbox{
-    flex: 0 0 auto;
-    flex-direction: column;
-    width: 25rem;
-    height: 100%;
-    background-color: var(--ghostwhite);
-    border-radius: 1rem;
-    box-shadow: 0 0 10px 1px var(--grey);
-    padding: 1.5rem 0;
-    gap: 1rem;
+.pbox {
+  flex: 0 0 auto;
+  flex-direction: column;
+  width: 25rem;
+  height: 100%;
+  background-color: var(--ghostwhite);
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 1px var(--grey);
+  padding: 1.5rem 0;
+  gap: 1rem;
 }
-.porto-img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 50%;
+.porto-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
 }
-.porto-img img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    height: 15rem;
-    border-radius: .5rem;
-    box-shadow: 0 0 10px 1px black;
-    object-fit: cover;
+.porto-img img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 15rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px 1px black;
+  object-fit: cover;
 }
-.porto-title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.porto-desc{
-    height: 12rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.porto-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  h1{
     text-align: center;
-    padding: 0 2rem;
+    font-size: 1.6rem;
+  }
 }
-.porto-desc p{
-    font-size: 1.3rem;
+.porto-desc {
+  height: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+.porto-desc p {
+  font-size: 1.1rem;
 }
 .porto-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.porto-button a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--blue);
-    height: 3rem;
-    width: 15rem;
-    border-radius: 1rem;
-    font-size: 1.2rem;
-    font-weight: 600;
-    cursor: pointer;
+.porto-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--blue);
+  height: 3rem;
+  width: 15rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
 }
 .porto-desc p,
 .porto-title h1,
-.porto-button a{
-    color: var(--richblack);
+.porto-button a {
+  color: var(--richblack);
 }
-.pbox:hover{
-    box-shadow: 0 0 15px 5px var(--grey);
+.pbox:hover {
+  box-shadow: 0 0 15px 5px var(--grey);
 }
-.porto-button a:hover{
-    box-shadow: 0px 0px 10px 1px var(--grey);
+.porto-button a:hover {
+  box-shadow: 0px 0px 10px 1px var(--grey);
 }
-.scroll-project{
-    margin-top: 1rem;
+.scroll-project {
+  display: none;
+  margin-top: 1rem;
 }
-.scroll-project p{
-    font-size: 1.5rem;
-    color: var(--base-font);
+.scroll-project p {
+  font-size: 1.5rem;
+  color: var(--base-font);
 }
 
 @media screen and (max-width: 480px) {
-    .portfolio{
-        padding: 0 2rem;
-    }
+  .portfolio {
+    padding: 0 2rem;
+  }
+  .porto-container {
+    justify-content: flex-start;
+  }
 }
