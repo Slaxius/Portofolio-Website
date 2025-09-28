@@ -1,240 +1,241 @@
-.contact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.contact-top-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+.contact-top-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
-.contact-top-container h1{
-    font-size: 4rem;
-    color: var(--base-font);
-    margin-bottom: .5rem;
+.contact-top-container h1 {
+  font-size: 4rem;
+  color: var(--base-font);
+  margin-bottom: 0.5rem;
 }
-.contact-top-container p{
-    font-size: 1.5rem;
-    color: var(--base-font);
+.contact-top-container p {
+  font-size: 1.5rem;
+  color: var(--base-font);
 }
-#contact-form-container{
-    width: 100%;
-    padding: 5rem 10rem 0 10rem;
+#contact-form-container {
+  width: 100%;
+  padding: 5rem 10rem 0 10rem;
 }
-.top-form-container{
-    display: flex;
-    justify-content: space-between;
+.top-form-container {
+  display: flex;
+  justify-content: space-between;
 }
-.top-form-container i{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: auto;
-    left: auto;
-    color: var(--base-font);
-    padding: 1.2rem 0 0 1rem;
-    font-size: 1.5rem;
-    height: auto;
+.top-form-container i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: auto;
+  left: auto;
+  color: var(--base-font);
+  padding: 1.2rem 0 0 1rem;
+  font-size: 1.5rem;
+  height: auto;
 }
-.left-form-container{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 35%;
-    gap: 3rem;
+.left-form-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 35%;
+  gap: 3rem;
 }
-.right-form-container{
-    width: 60%;
+.right-form-container {
+  width: 60%;
 }
 .left-form-container input::placeholder,
-.right-form-container textarea::placeholder{
-    font-size: 1.3rem;
+.right-form-container textarea::placeholder {
+  font-size: 1.3rem;
 }
 .left-form-container input,
-.right-form-container textarea{
-    border: 1px solid var(--base-font);
-    width: 100%;
-    padding: 1rem 1rem 1rem 3.5rem;
-    font-size: 1.3rem;
-    border-radius: 1rem;
-    background: transparent;
-    color: var(--base-font);
+.right-form-container textarea {
+  border: 1px solid var(--base-font);
+  width: 100%;
+  padding: 1rem 1rem 1rem 3.5rem;
+  font-size: 1.3rem;
+  border-radius: 1rem;
+  background: transparent;
+  color: var(--base-font);
 }
-.left-form-container input{
-    height: 4rem;
+.left-form-container input {
+  height: 4rem;
 }
-.right-form-container textarea{
-    height: 100%;
+.right-form-container textarea {
+  height: 100%;
 }
-.right-form-container .message{
-    height: 28.5rem;
+.right-form-container .message {
+  height: 28.5rem;
 }
-.bot-form-container{
-    margin-top: 2rem;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+.bot-form-container {
+  margin-top: 2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
-.bot-form-container button{
-    font-size: 1.5rem;
-    color: var(--sec-base-font);
-    background-color: var(--blue);
-    width: 10rem;
-    height: 3.5rem;
-    cursor: pointer;
-    border-radius: 2rem;
+.bot-form-container button {
+  font-size: 1.5rem;
+  color: var(--sec-base-font);
+  background-color: var(--blue);
+  width: 10rem;
+  height: 3.5rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  font-weight: 400;
 }
-.bot-form-container button:hover{
-    box-shadow: 0px 0px 10px 1px var(--grey);
+.bot-form-container button:hover {
+  box-shadow: 0px 0px 10px 1px var(--grey);
 }
 
 /* Pop up in contactValidation.js */
-.popup-content{
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    align-items: center;
-    justify-content: center;
+.popup-content {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
 }
-#popup-message{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    background: var(--background);
-    border-radius: 1rem;
-    box-shadow: 0 0 20px var(--blue);
-    height: auto;
-    width: auto;
-    padding: 4rem;
-    gap: 3rem;
-    
-    p{
-        font-size: 2rem;
-        color: var(--base-font);
-        text-align: center;
-    }
+#popup-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background: var(--background);
+  border-radius: 1rem;
+  box-shadow: 0 0 20px var(--blue);
+  height: auto;
+  width: auto;
+  padding: 4rem;
+  gap: 3rem;
+
+  p {
+    font-size: 2rem;
+    color: var(--base-font);
+    text-align: center;
+  }
 }
-#close-popup{
-    width: 10rem;
-    height: 3.5rem;
-    font-size: 1.5rem;
-    color: var(--sec-base-font);
-    background-color: var(--blue);
-    border-radius: 2rem;
-    cursor: pointer;
+#close-popup {
+  width: 10rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  color: var(--sec-base-font);
+  background-color: var(--blue);
+  border-radius: 2rem;
+  cursor: pointer;
 }
 
 /* Error Message */
-.error{
-    color: red;
-    font-size: 1rem;
+.error {
+  color: red;
+  font-size: 1rem;
 }
 input.error-input,
-textarea.error-input{
-    border-color: red;
+textarea.error-input {
+  border-color: red;
 }
 
 @media screen and (max-width: 1024px) {
-    .contact-top-container h1{
-        font-size: 2.5rem;
-    }
-    .contact-top-container p{
-        font-size: 1rem;
-    }
-    #contact-form-container{
-        padding: 5rem 5rem 0 5rem;
-    }
-    .top-form-container i{
-        font-size: 1.3rem;
-    }
-    .left-form-container input,
-    .right-form-container textarea{
-        padding: 1rem 1rem 1rem 3rem;
-    }
-    .bot-form-container button{
-        font-size: 1.3rem;
-        width: 8rem;
-        height: 3rem;
-    }
-    .error{
-        font-size: .8rem;
-    }
+  .contact-top-container h1 {
+    font-size: 2.5rem;
+  }
+  .contact-top-container p {
+    font-size: 1rem;
+  }
+  #contact-form-container {
+    padding: 5rem 5rem 0 5rem;
+  }
+  .top-form-container i {
+    font-size: 1.3rem;
+  }
+  .left-form-container input,
+  .right-form-container textarea {
+    padding: 1rem 1rem 1rem 3rem;
+  }
+  .bot-form-container button {
+    font-size: 1.3rem;
+    width: 8rem;
+    height: 3rem;
+  }
+  .error {
+    font-size: 0.8rem;
+  }
 }
 
-@media screen and (max-width:480px) {
-    .contact-top-container{
-        margin: 0 2rem;
-    }
-    .contact-top-container h1{
-        font-size: 2rem;
-    }
-    .contact-top-container p{
-        font-size: 1rem;
-    }
-    #contact-form-container{
-        padding: 3rem 3rem 0 3rem;
-    }
-    .top-form-container{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-    .top-form-container i{
-        font-size: 1rem;
-        padding: 1rem;
-    }
-    .left-form-container{
-        width: 100%;
-        gap: 1rem;
-    }
-    .right-form-container{
-        width: 100%;
-    }
-    .left-form-container input::placeholder,
-    .right-form-container textarea::placeholder{
-        font-size: 1rem;
-    }
-    .left-form-container input,
-    .right-form-container textarea{
-        padding: 1rem auto;
-        font-size: 1rem;
-    }
-    .left-form-container input{
-        height: 3rem;
-    }
-    .right-form-container .message{
-        height: 15rem;
-    }
-    .bot-form-container button{
-        font-size: 1rem;
-        height: 2.5rem;
-        width: 7rem;
-    }
-    #popup-message{
-        width: 75%;
-        padding: 2rem;
-        gap: 2rem;
+@media screen and (max-width: 480px) {
+  .contact-top-container {
+    margin: 0 2rem;
+  }
+  .contact-top-container h1 {
+    font-size: 2rem;
+  }
+  .contact-top-container p {
+    font-size: 0.8rem;
+  }
+  #contact-form-container {
+    padding: 3rem 3rem 0 3rem;
+  }
+  .top-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .top-form-container i {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .left-form-container {
+    width: 100%;
+    gap: 1rem;
+  }
+  .right-form-container {
+    width: 100%;
+  }
+  .left-form-container input::placeholder,
+  .right-form-container textarea::placeholder {
+    font-size: 0.8rem;
+  }
+  .left-form-container input,
+  .right-form-container textarea {
+    padding: 1rem auto;
+    font-size: 0.8rem;
+  }
+  .left-form-container input {
+    height: 3rem;
+  }
+  .right-form-container .message {
+    height: 15rem;
+  }
+  .bot-form-container button {
+    font-size: 1rem;
+    height: 2.5rem;
+    width: 7rem;
+  }
+  #popup-message {
+    width: 75%;
+    padding: 2rem;
+    gap: 2rem;
 
-        p{
-            font-size: 1.5rem;
-        }
+    p {
+      font-size: 1rem;
     }
-    #close-popup{
-        font-size: 1rem;
-        height: 2.5rem;
-        width: 7rem;
-    }
-    .error{
-        font-size: .7rem;
-    }
+  }
+  #close-popup {
+    font-size: 1rem;
+    height: 2.5rem;
+    width: 7rem;
+  }
+  .error {
+    font-size: 0.6rem;
+  }
 }
