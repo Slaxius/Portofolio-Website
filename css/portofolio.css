@@ -102,18 +102,18 @@ h1.porto-title {
   .porto-container {
     justify-content: flex-start;
     scrollbar-width: thin;
-    scrollbar-color: var(--blue) var(--grey);
+    scrollbar-color: var(--blue) var(--base-font);
     -webkit-overflow-scrolling: touch;
   }
   .porto-container::-webkit-scrollbar {
     width: 8px;
     height: 8px;
-    background-color: var(--grey);
+    background-color: var(--base-font);
   }
   .porto-container::-webkit-scrollbar-thumb {
     background-color: var(--blue);
     border-radius: 8px;
-    border: 2px solid var(--grey);
+    border: 2px solid var(--base-font);
   }
   .porto-container::-webkit-scrollbar-button {
     display: flex;
