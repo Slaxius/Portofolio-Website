@@ -16,6 +16,7 @@ h1.porto-title {
   justify-content: center;
   width: 100%;
   gap: 2rem;
+  padding: 1rem;
   overflow-x: auto;
 }
 .pbox {
@@ -97,6 +98,59 @@ h1.porto-title {
   box-shadow: 0px 0px 10px 1px var(--grey);
 }
 
+@media screen and (max-width: 1024px) {
+  .porto-container {
+    padding: 0;
+    justify-content: flex-start;
+    scrollbar-width: thin;
+    scrollbar-color: var(--blue) var(--grey);
+  }
+  .porto-container::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: var(--grey);
+  }
+  .porto-container::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+    border-radius: 8px;
+    border: 2px solid var(--grey);
+  }
+  .porto-container::-webkit-scrollbar-button {
+    display: flex;
+  }
+  .pbox {
+    margin-bottom: 1rem;
+  }
+  .porto-img {
+    width: 18rem;
+  }
+  .porto-img img {
+    max-height: 10rem;
+    border-radius: 0.5rem;
+  }
+  .porto-title h1 {
+    font-size: 1.3rem;
+  }
+  .porto-desc {
+    max-height: 10rem;
+    padding: 0 1rem;
+  }
+  .porto-desc p {
+    font-size: 1rem;
+  }
+  .porto-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .porto-button a {
+    height: 2rem;
+    width: 10rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+  }
+}
+
 @media screen and (max-width: 480px) {
   h1.porto-title {
     font-size: 2rem;
@@ -153,10 +207,5 @@ h1.porto-title {
     width: 10rem;
     border-radius: 1rem;
     font-size: 0.8rem;
-  }
-  .porto-desc p,
-  .porto-title h1,
-  .porto-button a {
-    color: var(--richblack);
   }
 }
