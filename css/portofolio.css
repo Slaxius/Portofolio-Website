@@ -103,6 +103,7 @@ h1.porto-title {
     justify-content: flex-start;
     scrollbar-width: thin;
     scrollbar-color: var(--blue) var(--grey);
+    -webkit-overflow-scrolling: touch;
   }
   .porto-container::-webkit-scrollbar {
     width: 8px;
