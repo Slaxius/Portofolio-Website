@@ -20,7 +20,7 @@ p.about {
   display: grid;
   align-items: flex-start;
   width: auto;
-  gap: 4rem 2rem;
+  gap: 4rem 4rem;
   grid-template-columns: repeat(4, max-content);
 }
 .skill {
@@ -86,6 +86,7 @@ p.about {
     width: 80%;
   }
   .my-skill {
+    gap: 3rem;
     width: auto;
   }
   .skill {
@@ -106,7 +107,7 @@ p.about {
   }
   .my-skill {
     justify-content: center;
-    gap: 2rem 1rem;
+    gap: 2rem;
     grid-template-columns: repeat(2, max-content);
   }
   .skill {
