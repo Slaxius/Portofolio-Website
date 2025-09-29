@@ -21,4 +21,4 @@ The website serves as a digital CV and showcase of my projects, skills, and expe
 This portfolio was created to showcase my journey as an undergraduate Computer Science student at Binus University, currently focusing in Network Technology.
 It highlights my skills, projects, and provides a way for recruiters, collaborators, or visitors to connect with me easily.
 
-Web: https://personal-website-jade-phi.vercel.app/
+Web: https://silveriuscalvin.vercel.app/
